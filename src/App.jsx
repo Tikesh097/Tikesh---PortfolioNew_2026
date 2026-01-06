@@ -1,23 +1,25 @@
+import React from "react";
+
 import CustomCursor from "./components/CustomCursor";
 import IntroAnimation from "./components/IntroAnimation";
 import Navbar from "./components/Navbar";
+
+import Home from "./sections/Home";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Project from "./sections/Project";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-import Home from "./sections/Home";
-import Project from "./sections/Project";
-import Skills from "./sections/skills";
-import React from "react"
 
 export default function App() {
   const [introDone, setIntroDone] = React.useState(false);
+
   return (
     <>
       {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
 
       {introDone && (
-        <div className="relative gradient text-white ">
-
+        <div className="relative gradient text-white">
           <CustomCursor />
 
           <Navbar />
@@ -30,5 +32,5 @@ export default function App() {
         </div>
       )}
     </>
-  )
+  );
 }
