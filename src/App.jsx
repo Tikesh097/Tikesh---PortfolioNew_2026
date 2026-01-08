@@ -1,5 +1,4 @@
 import React from "react";
-
 import CustomCursor from "./components/CustomCursor";
 import IntroAnimation from "./components/IntroAnimation";
 import Navbar from "./components/Navbar";
