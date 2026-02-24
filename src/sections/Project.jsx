@@ -2,14 +2,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, useMotionValueEvent, useScroll, motion } from "framer-motion";
 
 // desktop images
-import img1 from "../assets/img1.JPG";
-import img2 from "../assets/img2.JPG";
-import img3 from "../assets/img3.JPG";
+import Medicare1 from "../assets/Medicare1.jpg";
+import shopeaseDeskstop from "../assets/shopeaseDeskstop.png";
+import Tapman1 from "../assets/Tapman1.png";
 
 // mobile images
-import photo1 from "../assets/photo1.JPG";
-import photo2 from "../assets/photo2.png";
-import photo3 from "../assets/photo3.png";
+import Medicare2 from "../assets/Medicare2.png";
+import shopeaseMobile from "../assets/shopeaseMobile.png";
+import Tapman2 from "../assets/Tapman2.png";
 
 /* -----------------------------
    Custom Hook: detect mobile view
@@ -42,22 +42,22 @@ export default function Project() {
   const projects = useMemo(
     () => [
       {
-        title: "nk studio",
-        Project_link: "https://www.nk.studio/",
-        bgColor: "#0d4d3d",
-        image: isMobile ? photo1 : img1,
+        title: "MediCare",
+        Project_link: "https://github.com/Tikesh097/MediCare---Hospital-ManagementSystem",
+        bgColor: "#2283cc",
+        image: isMobile ? Medicare2 : Medicare1,
       },
       {
-        title: "Gamily",
-        Project_link: "https://gamilyapp.com/",
-        bgColor: "#3884d3",
-        image: isMobile ? photo2 : img2,
+        title: "ShopEase",
+        Project_link: "https://github.com/Tikesh097/ShopEase",
+        bgColor: "#cc0000",
+        image: isMobile ? shopeaseMobile : shopeaseDeskstop,
       },
       {
-        title: "Hungry Tiger",
-        Project_link: "https://www.eathungrytiger.com/",
-        bgColor: "#dc9317",
-        image: isMobile ? photo3 : img3,
+        title: "Tapmaan",
+        Project_link: "https://github.com/Tikesh097/Project--Weather-App",
+        bgColor: "#5b5b5b",
+        image: isMobile ? Tapman2 : Tapman1,
       },
     ],
     [isMobile]
