@@ -2,12 +2,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, useMotionValueEvent, useScroll, motion } from "framer-motion";
 
 // desktop images
-import Medicare1 from "../assets/Medicare1.jpg";
+import doctorsappointment_desktopview from "../assets/doctorsappointment_desktopview.png";
 import shopeaseDeskstop from "../assets/shopeaseDeskstop.png";
 import Tapman1 from "../assets/Tapman1.png";
 
 // mobile images
-import Medicare2 from "../assets/Medicare2.png";
+import doctorsappointment_mobileview from "../assets/doctorsappointment_mobileview.png";
 import shopeaseMobile from "../assets/shopeaseMobile.png";
 import Tapman2 from "../assets/Tapman2.png";
 
@@ -42,10 +42,10 @@ export default function Project() {
   const projects = useMemo(
     () => [
       {
-        title: "MediCare",
-        Project_link: "https://github.com/Tikesh097/MediCare---Hospital-ManagementSystem",
+        title: "Medimeet-Doctors Appointment Platform ",
+        Project_link: "https://github.com/Tikesh097/-Doctors-Appointment-Platform",
         bgColor: "#2283cc",
-        image: isMobile ? Medicare2 : Medicare1,
+        image: isMobile ? doctorsappointment_mobileview : doctorsappointment_desktopview,
       },
       {
         title: "ShopEase",
