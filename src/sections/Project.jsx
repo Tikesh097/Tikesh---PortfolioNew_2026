@@ -42,9 +42,9 @@ export default function Project() {
   const projects = useMemo(
     () => [
       {
-        title: "Medimeet-Doctors Appointment Platform ",
+        title: "Medimeet ",
         Project_link: "https://github.com/Tikesh097/-Doctors-Appointment-Platform",
-        bgColor: "#2283cc",
+        bgColor: "#000000",
         image: isMobile ? doctorsappointment_mobileview : doctorsappointment_desktopview,
       },
       {
